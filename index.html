@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 <header id="siteHeader">
   <div class="topbar">
     <div class="topbar-contacts">
@@ -60,32 +60,45 @@
   <a href="contatti.html">Contatti</a>
 </div>
 
-<section class="hero">
-  <div class="hero-text">
-    <span class="eyebrow">Boutique &middot; dal 1987</span>
-    <h1>L'eleganza<br>ha un <span class="it">indirizzo.</span></h1>
-    <p>Capi e accessori scelti a mano, sartorialità discreta e un occhio per i dettagli che dura da tre generazioni. Benvenuti nel nostro angolo.</p>
-    <a href="collezione.html" class="btn btn-solid">Scopri la collezione</a>
-  </div>
-  <div class="hero-visual hero-stage">
-    <div class="stage-glow"></div>
-    <div class="stage-inner">
-      <button class="stage-card stage-main" data-id="vestito-bordeaux" aria-label="Vestito Bordeaux Corsetto">
-        <img src="images/vestito_bordeaux_.jpg" alt="Vestito bordeaux con corpetto">
-        <span class="stage-price" data-price-for="vestito-bordeaux"></span>
-      </button>
-      <button class="stage-card stage-side stage-a" data-id="tacchi-spillo" aria-label="Décolleté tacco a spillo">
-        <img src="images/tacchi_suola_rossa.jpg" alt="Décolleté tacco a spillo">
-        <span class="stage-price" data-price-for="tacchi-spillo"></span>
-      </button>
-      <button class="stage-card stage-side stage-b" data-id="borsa-secchiello-nera" aria-label="Borsa a secchiello nera">
-        <img src="images/borsa_secchiello_nera.jpg" alt="Borsa a secchiello nera">
-        <span class="stage-price" data-price-for="borsa-secchiello-nera"></span>
-      </button>
+<section class="hero hb">
+  <div class="hb-grid">
+    <div class="hb-text">
+      <span class="eyebrow hb-eyebrow">Boutique &middot; Nogara &middot; dal 1987</span>
+      <h1>L'eleganza<br>ha un <span class="it">indirizzo.</span></h1>
+      <p>Capi e accessori scelti a mano, sartorialità discreta e un occhio per i dettagli che dura da tre generazioni. Benvenuti nel nostro angolo.</p>
+      <div class="hb-cta">
+        <a href="collezione.html" class="btn btn-ink">Scopri la collezione</a>
+        <a href="outfit.html" class="hb-link">Guarda gli outfit &rarr;</a>
+      </div>
+      <ol class="hb-steps">
+        <li><b>Scegli</b><span>i capi che ti piacciono, con la tua taglia</span></li>
+        <li><b>Prenota</b><span>con un messaggio, li teniamo da parte</span></li>
+        <li><b>Prova</b><span>in negozio e paghi solo se ti convincono</span></li>
+      </ol>
     </div>
-    <div class="hero-tag">
-      <b>Il look della settimana</b>
-      Tocca un capo per vederlo da vicino, scegliere la taglia e chiederne la disponibilità.
+    <div class="hb-visual">
+      <div class="hb-arch-line" aria-hidden="true"></div>
+      <figure class="hb-arch"><img src="images/Fashionista.jpg" alt="L'interno della boutique Angolo di Benni" width="736" height="1104"></figure>
+      <span class="hb-vertical" aria-hidden="true">Via dei Sarti 21 &mdash; Nogara</span>
+      <div class="hb-look">
+        <p class="hb-look-head"><b>Il look della settimana</b><span>3 pezzi</span></p>
+        <button class="stage-card hb-row" data-id="vestito-bordeaux" aria-label="Vestito Bordeaux Corsetto">
+          <img src="images/vestito_bordeaux_.jpg" alt="">
+          <span class="hb-name">Vestito Bordeaux<small>Vestiti</small></span>
+          <span class="hb-price" data-price-for="vestito-bordeaux"></span>
+        </button>
+        <button class="stage-card hb-row" data-id="tacchi-slingback" aria-label="Décolleté Slingback">
+          <img src="images/tacchi_a_punta_neri.jpg" alt="">
+          <span class="hb-name">Décolleté Slingback<small>Scarpe</small></span>
+          <span class="hb-price" data-price-for="tacchi-slingback"></span>
+        </button>
+        <button class="stage-card hb-row" data-id="orecchini-oro" aria-label="Orecchini a Cerchio">
+          <img src="images/orecchini_oro.jpg" alt="">
+          <span class="hb-name">Orecchini a Cerchio<small>Accessori</small></span>
+          <span class="hb-price" data-price-for="orecchini-oro"></span>
+        </button>
+        <p class="hb-look-foot">Tocca un capo per la taglia e la disponibilità</p>
+      </div>
     </div>
   </div>
 </section>
@@ -152,7 +165,7 @@
       </div>
     </a>
     <a class="section-link-card reveal" href="chi-siamo.html">
-      <img src="images/Fashionista.jpg" alt="Chi siamo">
+      <img src="images/pantalone_cammello_ampio.jpg" alt="Chi siamo">
       <div class="section-link-inner">
         <span class="eyebrow">Dal 1987</span>
         <h3>Chi siamo</h3>
